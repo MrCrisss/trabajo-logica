@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizacion</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/cotizacion.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <h2 class=" nave_title">CWE Components</h2>
+            </div>
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items">
+                    <a href="index.html" class="nav_links"> Inicio</a>
+                <li class="nav_items">
+                    <a href="contacto.html" class="nav_links"> Contacto </a>
+                </li>
+                <li class="nav_items">
+                <a href="acerca.html" class="nav_links"> Acerca de</a>
+                </li>
+
+                <img src="" alt="" class="nav_close">
+            </ul>
+
+            <div class="nav_menu">
+                <img src="" alt="" class="nave_img">
+            </div>
+        </nav>
+
+        <section class="hero_container container">
+            <h1 class=" hero_title"> Solicitud de Cotización de Componentes para Computadoras</h1>
+         </section>
+</header>   
+</body>
+    <main>
+        <form action="procesar_cotizacion.php" method="POST">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+      
+          <label for="email">Correo electrónico:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+      
+          <label for="telefono">Teléfono:</label><br>
+          <input type="tel" id="telefono" name="telefono"><br><br>
+      
+          <label for="componente">Componente:</label><br>
+          <select id="componente" name="componente">
+            <option value="procesador">Procesador</option>
+            <option value="tarjeta_madre">Tarjeta Madre</option>
+            <option value="memoria_ram">Memoria RAM</option>
+            <option value="tarjeta_grafica">Tarjeta Gráfica</option>
+            <option value="almacenamiento">Almacenamiento (Disco Duro/SSD)</option>
+            <option value="fuente_poder">Fuente de Poder</option>
+            <option value="gabinete">Gabinete</option>
+            <option value="perifericos">Periféricos (Teclado, Ratón, Monitor)</option>
+            <option value="otros">Otros</option>
+          </select><br><br>
+      
+          <label for="marca">Marca:</label><br>
+          <input type="text" id="marca" name="marca"><br><br>
+      
+          <label for="modelo">Modelo:</label><br>
+          <input type="text" id="modelo" name="modelo"><br><br>
+      
+          <label for="cantidad">Cantidad:</label><br>
+          <input type="number" id="cantidad" name="cantidad" min="1" required><br><br>
+      
+          <label for="comentarios">Comentarios adicionales:</label><br>
+          <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+      
+          <input type="submit" value="Enviar Cotización">
+        </form>
+         </main>
+    
+</body>
+</html>
